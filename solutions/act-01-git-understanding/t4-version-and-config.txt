@@ -1,0 +1,10 @@
+git --version
+git version 2.43.0
+git config --global user.name
+Stefan Velkov
+git config --global user.email
+velkov29stefan@gmail.com
+git config --list
+user.name=Stefan Velkov
+user.email=velkov29stefan@gmail.com
+colot.ui=true
