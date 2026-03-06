@@ -1,0 +1,24 @@
+git commit -m "Wrong message"
+
+[master 27c5e20] Wrong message
+ 4 files changed, 53 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 solutions/act-01-git-understanding/t4-version-and-config.txt
+ create mode 100644 solutions/act-01-git-understanding/t5-init-add-commit.txt
+ create mode 100644 solutions/act-01-git-understanding/t9-undo.txt
+
+ git commit --amend -m "Right message"
+
+ [master 27c3726] Right message
+ Date: Wed Mar 4 22:55:37 2026 -1000
+ 4 files changed, 53 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 solutions/act-01-git-understanding/t4-version-and-config.txt
+ create mode 100644 solutions/act-01-git-understanding/t5-init-add-commit.txt
+ create mode 100644 solutions/act-01-git-understanding/t9-undo.txt
+
+ git reset HEAD README.md
+ Unstaged changes after reset:
+M       README.md
+
+git restore README.md
