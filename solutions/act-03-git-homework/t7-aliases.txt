@@ -1,0 +1,13 @@
+git config --global alias.unstage 'reset HEAD --'
+git config --global alias.last 'log -1 HEAD'
+
+git config --list | grep alias
+alias.unstage=reset HEAD --
+alias.last=log -1 HEAD
+
+git last
+commit 8e2419765517468fe29e2db1b0fbec318c5be5a2 (HEAD, tag: v1.4)
+Author: velkovstefan <velkov29stefan@gmail.com>
+Date:   Fri Mar 6 07:48:04 2026 -1000
+
+    rebase

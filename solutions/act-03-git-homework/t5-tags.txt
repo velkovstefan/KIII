@@ -1,0 +1,24 @@
+git tag -a v1.4 -m "my version 1.4"
+git show v1.4
+tag v1.4
+Tagger: SVdevcoding <velkov29stefan@gmail.com>
+Date:   Fri Mar 6 07:52:28 2026 -1000
+
+my version 1.4
+
+commit 8e2419765517468fe29e2db1b0fbec318c5be5a2 (HEAD, tag: v1.4)
+Author: SVdevcoding <velkov29stefan@gmail.com>
+Date:   Fri Mar 6 07:48:04 2026 -1000
+
+    rebase
+
+diff --git a/a.txt b/a.txt
+index 18ebd85..73c42fb 100644
+--- a/a.txt
++++ b/a.txt
+@@ -1,2 +1,5 @@
+ c
+ d
++a
++b
++
