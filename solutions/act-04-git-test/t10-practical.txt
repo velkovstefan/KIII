@@ -1,0 +1,43 @@
+nano t.txt
+git add .
+git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   t.txt
+git commit -m "first"
+[master (root-commit) d88155e] first
+ 1 file changed, 1 insertion(+)
+ create mode 100644 t.txt
+nano t.txt
+git add .
+git status           
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   t.txt
+git commit -m "second"
+[master 16a6288] second
+ 1 file changed, 1 insertion(+)
+git branch new
+git checkout new
+Switched to branch 'new'
+nano t.txt
+git add .
+git status
+On branch new
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   t.txt
+git commit -m "new first"
+[new 322b813] new first
+ 1 file changed, 1 insertion(+)
+git status -s
+(no output)
+git log --oneline --decorate --graph --all
+* 322b813 (HEAD -> new) new first
+* 16a6288 (master) second
+* d88155e first
